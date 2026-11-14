@@ -2,9 +2,11 @@
   "version": "1.0.0",
   "released": "2026-11-14",
   "app": "releases/1.0.0/lumina-app-1.0.0.zip",
-  "appSha256": "7dbb713e39ba25dbd57d7e352ffb17b0cf8a91d63d18cc86a46a97604f00b454",
+  "appSha256": "718ed3120d1894e6de53bb9e60ea2d96ca85261ebe06c4dec7f38a0ee3de4ed5",
   "relay": "releases/1.0.0/lumina-relay-1.0.0.js",
   "relaySha256": "18f3f0433b97598e003c699d66996cef6708557303335c3a1511a0040a302483",
   "placeholder": "https://relay.lumina.invalid",
+  "android": "releases/1.0.0/lumina-android-1.0.0.apk",
+  "androidSha256": "faa8a0dec9ad3240a1296002c75b125bc605c39ff61bce0106aa2a2e3c126ed2",
   "requiresTizen": "9.0"
 }

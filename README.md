@@ -1,7 +1,8 @@
 # Lumina for Samsung TV
 
-Browse and view your Google Drive on a Samsung TV with the remote: photos,
-videos, PDFs and Google Docs. You sign in on your phone by scanning a QR code;
+Browse and view your Google Drive on your TV with the remote: photos,
+videos, PDFs and Google Docs. For Samsung TVs (2025 and later) and, as a test
+version, Android TVs such as Sony's. You sign in on your phone by scanning a QR code;
 the TV never shows a password form.
 
 This repository holds the installers and the built app. The app is not in
@@ -38,6 +39,40 @@ irm https://raw.githubusercontent.com/rishmarwah/lumina-tv/main/install.ps1 -Out
 
 The Windows installer has not yet been tested on a Windows PC. Please report
 problems.
+
+## Android TV (Sony and other Android TVs) · test version
+
+For Android TV 9 or newer, such as Sony's 2020 A8H. No computer needed. This
+test version signs in through the author's own sign-in service; it is meant
+for trying Lumina with people the author knows.
+
+On the TV, with the remote:
+
+1. **Install Downloader.** Open the Google Play Store on the TV, search for
+   **Downloader** (by AFTVnews) and install it.
+2. **Allow it to install apps.** Settings > Device Preferences > Security &
+   restrictions > Unknown sources > turn on **Downloader**. (On some TVs the
+   path is Settings > Apps > Security & restrictions.)
+3. **Download Lumina.** Open Downloader, select the address box and type:
+
+   ```
+   raw.githubusercontent.com/rishmarwah/lumina-tv/main/tv.apk
+   ```
+
+   Choose **Go**, then **Install** when asked, then **Done**. Downloader may
+   offer to delete the downloaded file afterwards; that's fine.
+4. **Open Lumina** from the Apps row (the banner with the glass prints).
+5. **Connect Google Drive.** Press OK on Google Drive (Connect), scan the QR
+   code with your phone, choose your Google account, and on "Google hasn't
+   verified this app" choose **Advanced**, then continue. Allow access.
+
+**Keep Android System WebView up to date** (Play Store > My apps). Lumina runs
+on it; very old versions can't open PDFs beyond their first page.
+
+**Updating:** repeat step 3. Your sign-in is kept.
+
+Remote keys: arrows and OK to move and choose, Back to go up a level, Play/Pause
+for slideshows and video, Channel Up/Down (or Next/Previous) to change file.
 
 ## What the installer does
 
