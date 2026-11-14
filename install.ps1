@@ -189,7 +189,7 @@ if (-not $Update -and -not (Get-State 'STARTED')) {
   Todo '•' 'a Google account (the one whose Drive you want on the TV)'
   Todo '•' 'a Samsung account (free; for the developer certificate)'
   Todo '•' 'a Cloudflare account (free; for your own small sign-in service)'
-  Todo '•' 'about 5 GB of free disk space on drive C:'
+  Todo '•' 'about 4 GB of free disk space on drive C: (the TV needs only a few MB)'
   Say ''
   Dim 'The installer saves its progress. You can stop at any prompt and run it again later.'
   if (-not (Confirm 'Ready to start?')) { exit 0 }

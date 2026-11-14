@@ -15,7 +15,8 @@ to do at each step that needs you.
 - A Samsung TV from 2025 or later (Tizen 9.0 or newer), and its remote
 - A Mac, or a Windows PC, on the same network as the TV
 - A Google account, a Samsung account and a Cloudflare account (all free)
-- About 5 GB of disk space and 45 to 60 minutes the first time
+- About 4 GB of free space **on the computer** (not the TV; see below), and
+  45 to 60 minutes the first time
 
 ## Install
 
@@ -53,6 +54,47 @@ problems.
 
 The installer remembers its progress. Stop at any prompt and run it again to
 carry on.
+
+## Disk space
+
+The space is needed **on your Mac or PC, not on the TV**. On the TV, Lumina
+takes about 6 MB.
+
+The computer needs Samsung's TV tools to sign Lumina for your TV and send it
+over Wi-Fi. They are large:
+
+| On the computer | Size |
+|---|---|
+| Samsung's Tizen Studio tools (`tizen-studio`) | 3.0 GB |
+| Java, which Samsung's tools bring with them (`.package-manager`) | 0.3 GB |
+| Node.js and Cloudflare's tool, for setting up your sign-in service | 0.4 GB |
+| The installer's own files and downloads (`.lumina-installer`) | 0.3 GB |
+| **Total** | **about 4 GB** |
+
+Your sign-in service takes no space on the computer: it runs in your
+Cloudflare account.
+
+### Getting the space back
+
+Once Lumina is on your TV, you can delete Samsung's tools and the downloads,
+and Lumina keeps working on the TV. These are safe to delete:
+
+| Delete | Where |
+|---|---|
+| `tizen-studio` | Mac: your home folder. Windows: `C:\tizen-studio` |
+| `.package-manager` | your home folder |
+| `downloads` and `node` | inside `.lumina-installer` in your home folder |
+| `.npm` (Node's download cache) | your home folder |
+
+**Keep these:**
+
+- **`SamsungCertificate`** in your home folder. It is tiny, and every future
+  update must be signed with the same certificate. Samsung cannot recover it.
+- **The rest of `.lumina-installer`**: it remembers your TV, your sign-in
+  service and your certificate, so updating doesn't mean setting up again.
+
+Updating later downloads the tools again, so the 4 GB is needed again while
+you update.
 
 ## Updating
 
