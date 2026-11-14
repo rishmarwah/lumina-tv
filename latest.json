@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "released": "2026-11-14",
+  "app": "releases/1.0.0/lumina-app-1.0.0.zip",
+  "appSha256": "7dbb713e39ba25dbd57d7e352ffb17b0cf8a91d63d18cc86a46a97604f00b454",
+  "relay": "releases/1.0.0/lumina-relay-1.0.0.js",
+  "relaySha256": "18f3f0433b97598e003c699d66996cef6708557303335c3a1511a0040a302483",
+  "placeholder": "https://relay.lumina.invalid",
+  "requiresTizen": "9.0"
+}
